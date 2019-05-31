@@ -9,7 +9,7 @@ import User from "../pages/user/index.jsx";
 class Router extends Component {
   render () {
     return (
-      <Routes>
+      // <Routes>
         <Switch>
           <Route path="/" exact render={() => (<Redirect to="/home" />)}></Route>
           <Route path="/home" component={Home}></Route>
@@ -17,7 +17,7 @@ class Router extends Component {
           <Route path="/about" component={About}></Route>
           <Route path="/user" component={User}></Route>
         </Switch>
-      </Routes>  
+      // </Routes>  
     )
   }
 }
