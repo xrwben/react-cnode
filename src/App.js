@@ -13,7 +13,7 @@ class App extends Component {
   constructor () {
     super()
     this.state = {
-      currentRoute: []
+      currentRoute: ["全部"]
     }
   }
   componentWillMount () {

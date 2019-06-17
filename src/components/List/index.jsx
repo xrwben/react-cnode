@@ -7,16 +7,16 @@ class List extends Component {
     return (
       <div className="list-cell">
         <div className="list-left">
-          <img src="https://avatars2.githubusercontent.com/u/227713?v=4&s=120" alt=""/>
-          <span>42/35181</span>
+          <img src={this.props.topic.author.avatar_url} title={this.props.topic.author.loginname} alt=""/>
+          <span>{this.props.topic.reply_count}/{this.props.topic.visit_count}</span>
         </div>
         <div className="list-center title">
-          <span>置顶</span>
-          <NavLink to="/">Node 12 值得关注的新特性</NavLink>
+          {this.props.topic.top?<span>置顶</span>:null}
+          <NavLink to="/">{this.props.topic.title}</NavLink>
         </div>
         <div className="list-right">
-          <img src="https://avatars2.githubusercontent.com/u/227713?v=4&s=120" alt=""/>
-          <span>3 分钟前</span>
+          <img src={this.props.topic.author.avatar_url} title={this.props.topic.author.loginname} alt=""/>
+          <span>{this.props.topic.last_reply_at}</span>
         </div>
       </div>
     );
