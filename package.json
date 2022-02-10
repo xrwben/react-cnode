@@ -35,6 +35,6 @@
   },
   "devDependencies": {
     "customize-cra": "^0.2.12",
-    "node-sass": "^4.12.0"
+    "node-sass": "^7.0.0"
   }
 }
